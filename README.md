@@ -5,7 +5,6 @@
 
 ## <p align="center">💬 Proof Overview</p>  
 
-
 We present a rigorous algebraic and graded-operator proof framework addressing the Two-Dimensional Jacobian Conjecture ($n=2$). By decomposing polynomial maps into homogeneous grading tiers and analyzing the differential obstruction operator $D(F) = J(P_d, F)$, we demonstrate that any attempt to construct a non-trivial, non-automorphism polynomial pair $(P,Q) \in \mathbb{C}[x,y]^2$ satisfying $J(P,Q) = c \in \mathbb{C}^{\times}$ leads inexorably to an unresolvable degree incompatibility or a coefficient contradiction. Combining this graded recurrence with the Jung-van der Kulk Theorem establishes that valid polynomial maps are strictly restricted to invertible automorphisms. To ensure absolute mathematical certainty, this entire structural framework is fully translated and machine-verified in Lean 4.
 
 * **The Core Mechanism:** By combining Euler's Homogeneous Function Theorem, Clairaut's Theorem, and the Jung-van der Kulk Theorem, the proof demonstrates that any attempt to construct a non-trivial, non-automorphism polynomial pair $(P,Q) \in \mathbb{C}[x,y]^2$ satisfying $J(P,Q) = c \in \mathbb{C}^{\times}$ inevitably leads to an unresolvable degree incompatibility or a coefficient contradiction.
