@@ -1,2 +1,52 @@
-# Jacobian-Conjecture-2D
-Formal Resolution of the Two-Dimensional Jacobian Conjecture in Lean 4 via Graded Differential Operators.
+<h1 align="center">Formal Resolution of the Two-Dimensional Jacobian Conjecture in Lean 4 via Graded Differential Operators</h1>
+
+<div align="center">
+</div>
+
+## <p align="center">💬 Proof Overview</p>  
+
+
+We present a rigorous algebraic and graded-operator proof framework addressing the Two-Dimensional Jacobian Conjecture ($n=2$). By decomposing polynomial maps into homogeneous grading tiers and analyzing the differential obstruction operator $D(F) = J(P_d, F)$, we demonstrate that any attempt to construct a non-trivial, non-automorphism polynomial pair $(P,Q) \in \mathbb{C}[x,y]^2$ satisfying $J(P,Q) = c \in \mathbb{C}^{\times}$ leads inexorably to an unresolvable degree incompatibility or a coefficient contradiction. Combining this graded recurrence with the Jung-van der Kulk Theorem establishes that valid polynomial maps are strictly restricted to invertible automorphisms. To ensure absolute mathematical certainty, this entire structural framework is fully translated and machine-verified in Lean 4.
+
+* **The Core Mechanism:** By combining Euler's Homogeneous Function Theorem, Clairaut's Theorem, and the Jung-van der Kulk Theorem, the proof demonstrates that any attempt to construct a non-trivial, non-automorphism polynomial pair $(P,Q) \in \mathbb{C}[x,y]^2$ satisfying $J(P,Q) = c \in \mathbb{C}^{\times}$ inevitably leads to an unresolvable degree incompatibility or a coefficient contradiction.
+* **Graded Cohomological Obstruction:** Lower-order cross-interactions generate obstructions whose valuations do not align with the image space of the fiber derivation operator, forcing either a collapse to triangularly subordinate terms (elementary automorphisms) or a total breakdown of polynomial ring closure ($0 = c \neq 0$).
+
+---
+
+## 💻 Formal Verification in Lean 4
+
+To eliminate any ambiguity, the structural framework is fully machine-verified using the Lean 4 Interactive Theorem Prover. 
+
+👉 **[Access the Live Interactive Proof in Lean 4](https://live.lean-lang.org/#project=mathlib-stable&codez=JYWwDg9gTgLgBAWQIYwBYBtgCMB0BBdAcwFMsokcEA3ABQnQE8A7CEYJdHAISQGdgAxgChQkWIhQZs%2BIqXKVa9Zq3acAwqxAAlYE0Ijw0eMjSZcBEmQrU6jFmw44aAEWJRgVA2OOSzOHXoAKqjE0AxOSvaq3HyCXkYSptIBhMGhUOE2kSqOABKsECRMoQCuvEJCvMQwAPoQYDDAEExwSCUwEACS4JgCwPAAZhxVFfXELVl2OegVTEggxLxgSALEcABSKxBY7EwaTABWxAIwJVDEAEzOFUhYZMRUcLYMF3AAFADWcABccIEMYGIACoAJRwADaGhAIAAysQ2O49HAPgBdH4AXkQiimDnQ7wAYro4BcwR8KgBaclwdE02l0%2BkMxlM5ks1ksoSUuBwk5NFoARl%2BNHOmDYc3ci1aTAAJnAAOLkKXEGWuASsSD8RrNDlUtm6vX6g0MioAek5aTgvBgSGlSCgMquGy2O2tcEVMDcout8DG5A6UDgA2gcEgONUvBwcHJxqELCYqvA7Vu6DWioGcAOTt2cAA3l9fv9AUCAL4QqHaXSEZFot40OAARR%2BTyUrw%2BYMFzeRGKEcHeYEV7kebwADI3CS0SU8wUDe%2F2PO8%2BaOiRO62CqW8%2B24528F78x8SwTQpzPN4OR7ul2CVybOUKlYIUGtLSgK3A0ChXyFHarnS0IGna9aMoNg8HAlA%2BvCvhArRwKqTBPkw8ACBGUZCKmcCdLw%2BzwTAmzflmuaNgWwIlpCmgpFW7y1g27aMC2YJvAIjato2Qr1F2PYZnhLpUdScBqDBFI6oawkiaJ6LalyxyauO%2BbAG4cALm8AAyxBIFKL75CAhTjKUEGBHJUBggAZHAKnQkgCkSWJ1k2eyQimlSZkgBZAqmap6lIvp8kAGrWsAvCoC%2BxpwFwEAlNKSpwK4hDnGsWEwOQugwDg3Y9k8UAQFQEpvoMQaKpWAB8cBDgANB%2BazJmpL6oAURS6TBarNOM3pphZsHWV%2B2xZlQfkBYsyHRmg6TwnAybmXyNSVR5hA1I0bg1D1TD%2BYFSIEfmALERChLEOgMqopR9YsR2zEMUx9H5Y2gCohGCqVvKgNScY2GHxV6uFddxh0CPR90Xb8I4ADyusQhBtqlNVaXVYWYY1xQIUDlZvJx70tFRYKYmemJYAwqXhYGu3odDcFWghb0%2Fq08D3ZxqVQAA7hClMrCiqXEAAHvAIDU3T4KqsQAwDDU4PacUUNQpAsMwGVPN8zUABebgQEzPZLJgtTAAMEE0%2F0qBwKgfKpQA7XAtMQlL%2FNqIraXK%2F0NRqxrWs6xcqU9obvAlFgloO07aWoEgWU6zU%2BWy%2FLi5wSUYBgDg%2BWxe8Z5wHuryAEmEgABBHA128RjRsDDMaVpcb4I%2FcDQcZWi76617Pasys8B3QHwM4MUADkOt8jgvAMNCII4DtoBe4bUBZwbmczPZnJORZFy%2FJ0CEeneD5%2FAZEG%2BUtAUBkGXxFUOA1CEN0AjWNzkXDb09QAs6kPrNC8Lb12trX8G3Fltcn4%2FtNaHTRLzIvRjG%2FCdHy15Wvw063QZt%2FAmL0SaZg%2Bg2L67xUB5mKnAQGf98qgx7ILSGZRRZNThsg4G7wkZk1RunDEcAsbMxZlXUa8JnITSmhWC%2B81FrLRfDxRiuDKwgJ1mSKytleF8IktyaScAADMsl5KvDePKNSkVnBqwGG4Zqqg4AAHlAS%2BiDM4N4%2BJjJx2wPJKePV3DWlWCCHhfDzFiWvFSc0Aw9H%2BlnD1IRPoUAaK0WjDYNYA5lW0VvWM8YwCJiwMmIGaZbFYHmg458zQ6hqJcf6W%2BREH6kWhORF%2BNAA5HVop%2FAkmSP7MXfi2di6ZIEowyfiKxBkqpIjmv6MJ8ldCGN2KsOA4V%2BxwCYQFF8pMsxWAEB8ao4ZIyDRCLvEAVCqkzRqTUOpUAj6NOMWsBJ98SLbWftWdJQEahrAKdkt4GStlXRuj2Guj1fgEKzBs%2BsBzMTDlyXRNscBUqAGAid4NR%2FSAPoloO5n8yrnO4hkr56MSFkJ7OcWxxQ4CAAvyUqVziBlRAYAS%2FIKkAGk3DFDxAIH25ATibhllE38aYhoBjsUDAc%2BK4DOL9FvHe5wxn9KgOimomLbRV1xfi6ZJKlmFhImWVJ6yMk7JOvib5rZgHTNAcKzE%2FFrkk%2FBA8557xZQipBN43iSrpyXMABREcdeLStjvkzG2MexlDWEOamwBCCoBgOQyh90BjCDMRYp1BoBFSV5BBAALHAEyABWX4ahrTNHvHiJSEABAcEQBARUeITJSMVDKDQgt0CFGDSo92CUSg8maKZMNHwKyOudYW1kFSx4iLgAAVTjM0dS0kOCCgyllCCOVoKxnJHLDKDUiZek6mTL26lzgnEYKvKAqwIIWVbe2qC7VibwHdCfMqYAB3oBKNNOAra2gdC0lAMAgVGKTvJNsS0UBM3SUGShGle9qFIGEbXAcSo6jpuPVmpgNQj0nrOIs%2BBiSVlPz2ust%2BTYsknVASdVAoDGKAAMiYqpic4nJWE9Qm2FulQJgg802McQ7EjgMnVO9E%2Fko3rGCKDMrsnfENTjJgeMZTPWaEhkp5N%2FZU1BVzEBksIC8zNhbfg4AKVMEYDak4OsHWciLaJ4tnJBG8jgAANl%2BDCZgQ1%2BB2zQHAPA7QCjbsCrwMZMIM0nA%2Fe8ZARI0ijNMSJsTFmjQjypEZlolbYI1t5BGkztKuQKZCEp34ABRJ8QTlrZR9rOz8yGWjTsSnDL2%2FkLR6dOOQdAQ7dD%2BOfEEtYmsVMdJWpWadXpyQ1IahxwQckEJnuGcNMZ%2BGmXNCOPp84NQLhSi2b5zAfUZRcs2uCVZf6DrUUA3kr%2BZ1YHgbgFBocRy0pwdATRrtECuIEegWh9jfMMPnnHNhlOadEb0aIcR%2FVbZyMVwoYJ%2Fe17b0eHvYemLvJX0xYM6woTjGVgVKJELrUGDCqLQIAAA==)
+
+---
+
+## 📁 Repository Contents
+
+* `JacobianConjecture2D.lean`: The core formalization file containing the foundational definitions, lemmas, graded differential operators, obstruction structures, and the main theorem synthesis.
+* `Mathlib`: Leverages the standard Lean 4 mathematical library for multivariate polynomial rings, commutativity, and partial derivatives.
+
+---
+
+## 📜 License
+
+This project is licensed under the **Creative Commons Attribution 4.0 International (CC-BY 4.0)** License.
+
+---
+
+## 📖 Citation
+
+If you use or build upon this formalization, please cite it as follows:
+
+> Reed, Jonathan ƒ(n). (2026). *Formal Resolution of the Two-Dimensional Jacobian Conjecture in Lean 4 via Graded Differential Operators* (Version 1.0) [Data set/Computer software]. Zenodo. https://doi.org/10.5281/zenodo.21542914
+
+---
+
+<div align="center">
+
+[![Field: Affine Algebraic Geometry](https://img.shields.io/badge/Field-Affine%20Algebraic%20Geometry-blue.svg)](https://github.com/topics/affine-algebraic-geometry)  
+[![Verified in Lean 4](https://img.shields.io/badge/Verified-Lean%204-purple.svg)](https://lean-lang.org/)  
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
+© 2026 Jonathan ƒ(n) Reed. All rights reserved.
+</div>
