@@ -1,4 +1,4 @@
-<h1 align="center">Formal Resolution of the Two-Dimensional Jacobian Conjecture in Lean 4 via Graded Differential Operators</h1>
+<h1 align="center"><i>Formal Resolution of the Two-Dimensional Jacobian Conjecture in Lean 4 via Graded Differential Operators</i></h1>
 
 <div align="center">
 </div>
