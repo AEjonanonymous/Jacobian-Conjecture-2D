@@ -10,6 +10,10 @@ We present a rigorous algebraic and graded-operator proof framework addressing t
 * **The Core Mechanism:** By combining Euler's Homogeneous Function Theorem, Clairaut's Theorem, and the Jung-van der Kulk Theorem, the proof demonstrates that any attempt to construct a non-trivial, non-automorphism polynomial pair $(P,Q) \in \mathbb{C}[x,y]^2$ satisfying $J(P,Q) = c \in \mathbb{C}^{\times}$ inevitably leads to an unresolvable degree incompatibility or a coefficient contradiction.
 * **Graded Cohomological Obstruction:** Lower-order cross-interactions generate obstructions whose valuations do not align with the image space of the fiber derivation operator, forcing either a collapse to triangularly subordinate terms (elementary automorphisms) or a total breakdown of polynomial ring closure ($0 = c \neq 0$).
 
+<div align="center">
+<img src="https://github.com/AEjonanonymous/Jacobian-Conjecture-2D/blob/main/Gemini_Generated_Image_avx30qavx30qavx3.png" alt="Conceptual Bifurcation Diagram of the Jacobian Conjecture Proof" width="975px">
+</div>
+
 ---
 
 ## ✅ Formal Translation & Verification in Lean 4
