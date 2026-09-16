@@ -1,0 +1,17 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "JacobianConjecture2D.lemma1_leading_tier_vanishing",
+    "JacobianConjecture2D.lemma2_intermediate_tiers_vanish",
+    "JacobianConjecture2D.leading_tier_fiber_invariance",
+    "JacobianConjecture2D.kernel_characterization_fiber",
+    "JacobianConjecture2D.lemma3_derived_obstruction_structure",
+    "JacobianConjecture2D.jacobian_conjecture_2d_established"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}
